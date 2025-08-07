@@ -14,19 +14,27 @@
             width: 300px;
         }
         th, td{
-            border: 1px solid gray;
+            border: 1px solid rgb(0, 0, 0);
             padding: 10px;
+        }
+        .row{
+            background-color: gray;
+            color: white;
         }
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <tr>
+            <tr class="row">
                 <th rowspan="2">Área</th>
-                <th>Disciplina</th>
+                <th rowspan="2">Disciplina</th>
                 <th colspan="2">Notas</th>
-                <th>Média</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr class="row">
+                <th>Nota 1</th>
+                <th>Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -55,7 +63,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="row">
                 <th colspan="4">Média de Exatas</th>
                 <td>0.0</td>
             </tr>
@@ -72,7 +80,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="row">
                 <th colspan="4">Média de Humanas</th>
                 <td>0.0</td>
             </tr>
